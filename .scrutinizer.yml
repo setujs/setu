@@ -1,0 +1,9 @@
+checks:
+  javascript: true
+filter:
+  excluded_paths:
+    - docs/
+    - scripts/
+    - tests/
+    - setu.js
+    - setu.min.js

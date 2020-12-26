@@ -1,0 +1,45 @@
+{
+  "name": "setu",
+  "version": "v0.1.0",
+  "description": "Setu is a JavaScript framework for building web applications",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "instrument": "./node_modules/.bin/istanbul instrument setu.js > setu.inst.js",
+    "lint": "./node_modules/.bin/eslint setu.js",
+    "coverage-report": "./node_modules/istanbul/lib/cli.js report --root coverage",
+    "codecov-upload": "./node_modules/.bin/codecov",
+    "coveralls-upload": "cat coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "coverage": "npm run coverage-report && npm run codecov-upload && npm run coveralls-upload",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/setujs/setu.git"
+  },
+  "keywords": [
+    "javascript",
+    "framework",
+    "mvvm",
+    "javascript-framework",
+    "js-framework"
+  ],
+  "author": "Reetesh Ranjan <reeteshranjan@piaxis.tech>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/setujs/setu/issues"
+  },
+  "homepage": "https://github.com/setujs/setu#readme",
+  "devDependencies": {
+    "codecov": "^3.0.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.17.0",
+    "js-beautify": "^1.7.5",
+    "minimist": "^1.2.0",
+    "uglify-js": "^3.3.9"
+  }
+}
