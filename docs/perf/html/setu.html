@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Setu Test</title>
+  <link rel="stylesheet" type="text/css" href="../../css/normalize.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen">
+</head>
+<body>
+  <div setu-app=test>
+    <h4>Setu<span class=time id=run-setu>Run</span></h4>
+    <div id=setu-template>
+      <div class=row setu-loop="item in data">
+        <div onclick="_select(this)">{{item.label}}</div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="../js/browse.min.js"></script>
+  <script type="text/javascript" src="../js/setu.min.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  <script type="text/javascript" src="../js/setu-test.js"></script>
+</body>
+</html>

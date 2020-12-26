@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Test</title>
+  <link rel="stylesheet" type="text/css" href="../../css/normalize.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen">
+</head>
+<body>
+  <div id=vue-app>
+    <h4>Vue.js<span class=time id="run-vue" onclick="run()">Run</span></h4>
+    <div class="row" v-for="item in data">
+      <div onclick="selectRow(this)">{{item.label}}</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  <script type="text/javascript" src="../js/vue.js"></script>
+</body>
+</html>

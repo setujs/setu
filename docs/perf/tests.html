@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Performance Comparison: React, Angular, Knockout, Setu</title>
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
+</head>
+<body>
+  <div class=container>
+    <h1>Performance Comparison of React, Angular, Knockout and Setu</h1>
+    <h4>How to run?</h4>
+    <ul>
+      <li>Click <code>Run</code> on the right of each framework. It would run a test that produces 1000 elements from a loop/repeat template.</li>
+      <li>The time taken by the test replaces the text <code>Run</code> but you can click it again to run the test again.</li>
+      <li>An average of at least 10 runs per framework gives a better feel of the time taken by it in general. If you run the tests in quick succession you might observe spikes.</li>
+    </ul>
+    <hr>
+    <p><b>Credits</b>: this performance test is adapted from <a href=https://www.codementor.io/reactjs/tutorial/reactjs-vs-angular-js-performance-comparison-knockout>this article</a> with a demo <a href=https://chrisharrington.github.io/demos/performance/>here</a>, which originally compares React, Angular and Knockout. The source code has been modified to include Setu tests.</p>
+    <hr>
+    <p>&nbsp;</p>
+    <div class="column first"><iframe src="html/setu.html"/></iframe></div>
+    <div class=column><iframe src="html/react.html"/></iframe></div>
+    <div class=column><iframe src="html/angular.html"/></iframe></div>
+    <div class=column><iframe src="html/knockout.html"/></iframe></div>
+  </div>
+  <div style='clear:both;'></p>
+</body>
+</html>
